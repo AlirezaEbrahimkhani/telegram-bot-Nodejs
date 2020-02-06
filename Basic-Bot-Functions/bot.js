@@ -5,7 +5,7 @@ const bot = new Telegraf('1025160257:AAHMFYeiqHLJUmFGqSm60FbDlVnCl7hgiT8');
 //code 
 
 bot.start((ctx) => {
-    ctx.reply("You have entered start button")
+    ctx.reply(ctx.from.first_name + " have entered start button and it is " + ctx.updateSubTypes[0])
 })
 
 bot.help((ctx) => {
@@ -14,6 +14,10 @@ bot.help((ctx) => {
 
 bot.settings((ctx) => {
     ctx.reply("you have entered setting button")
+})
+
+bot.command(["test" , "Test"] , (ctx) => {
+    ctx.reply("Hello world !");
 })
 
 bot.launch();
