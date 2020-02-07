@@ -1,0 +1,16 @@
+{
+  "name": "1-echo-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon bot.js"
+  },
+  "author": "Alireza Ebrahimkhani",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.2",
+    "telegraf": "^3.36.0"
+  }
+}
