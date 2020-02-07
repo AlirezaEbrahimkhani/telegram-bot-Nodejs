@@ -6,6 +6,8 @@ const helpMessage = `
 Say somthing to me Please :
 /start - start the bot
 /help - command refrence
+/echo - "You entered echo command"
+/echo <msg> - echo your message
 `
 
 bot.use((ctx , next) => {
