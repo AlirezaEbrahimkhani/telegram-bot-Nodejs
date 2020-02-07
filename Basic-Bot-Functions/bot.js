@@ -37,12 +37,22 @@ bot.hashtag("AlirezaEbrahimkhani" , (ctx) => {
 })
 
 bot.use((ctx , next) => {
+    ctx.state.Alireza = 5
     ctx.reply(ctx.from.first_name + " now use the bot :|");
     next(ctx);
 })
 
 bot.start((ctx) => {
-    ctx.reply(ctx.from.first_name + " have entered start button and it is " + ctx.updateSubTypes[0])
+    // ctx.reply(ctx.from.first_name + " have entered start button and it is " + ctx.updateSubTypes[0])
+    ctx.reply(ctx.state.Alireza)
+})
+
+bot.command("start" , ctx => {
+    bot.telegram.sendMessage(ctx.chat.id , "hello World !" , 
+    {
+        parse_mode : 'Markdown',
+        disable_notification : true
+    });
 })
 
 
