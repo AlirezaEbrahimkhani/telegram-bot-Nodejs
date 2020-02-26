@@ -1,5 +1,5 @@
 # telegram-bot-Nodejs
-implement #7 telegram-bot with NodeJs and telegraph node package
+my first telegram-bot with NodeJs and telegraph node package
 
 robot's id that develop in the project :
 
